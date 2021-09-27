@@ -49,7 +49,7 @@ public class TC1_Librarian_Login {
                 Thread.sleep(2000);
                 //Then verify that there are 3 modules the page
 
-                List<WebElement> allModules = driver.findElements(By.xpath("//span[@class=\"title\"]"));
+                List<WebElement> allModules = driver.findElements(By.className("title"));
                 //System.out.println("allModules.size() = " + allModules.size());
 
                 if (allModules.size() == 3) {

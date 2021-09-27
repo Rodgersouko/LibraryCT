@@ -36,9 +36,9 @@ public class TC2_Librarian_Login_Negative {
         WebElement errorMessage=driver.findElement(By.xpath("//div[@class=\"alert alert-danger\"]"));
         String expectedResult="Sorry, Wrong Email or Password";
         if(errorMessage.getText().equalsIgnoreCase(expectedResult)){
-            System.out.println("Error message is verify");
+            System.out.println("verified Error message");
         }else{
-            System.out.println("Error message is not verify");
+            System.out.println("Error message not verified");
         }
         driver.quit();
 
